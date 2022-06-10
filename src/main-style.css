@@ -22,8 +22,10 @@ body{
 }
 
 .page-content{
-    background-image: url('burger.webp');
-    background-size: 100vw 100vh;
+    background-image: url('burger-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(43, 38, 38);
     flex-grow: 1;
     flex-shrink: 0;
 }
