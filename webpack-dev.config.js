@@ -19,7 +19,7 @@ module.exports = {
                 type: 'asset/resource'
             },
             {
-                test: /\.webp$/i,
+                test: /\.(webp|jpg)$/i,
                 type: 'asset/resource'
             },
         ],
