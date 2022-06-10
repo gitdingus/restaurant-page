@@ -12,8 +12,6 @@ content.appendChild(footer);
  
 pageContent.appendChild(createHomeDiv());
 
-logText();
-
 function createNavBar(){
     const nav = document.createElement('nav');
     const div = document.createElement('div');
@@ -38,12 +36,26 @@ function createLinkListItem(name){
     const link = document.createElement('a');
 
     link.textContent = name;
+    link.id = name.toLowerCase();
 
+    link.addEventListener('click', setActivePage);
     item.appendChild(link);
 
     return item;
 }
 
+function clearActivePage(){
+    const links = document.querySelectorAll('nav ul li a');
+
+    links.forEach( link => link.classList.remove('active-page'));
+    
+}
+
+function setActivePage(e){
+    clearActivePage();
+
+    e.target.classList.add("active-page");
+}
 function createPageContentDiv(){
     const div = document.createElement('div');
     div.classList.add("page-content");

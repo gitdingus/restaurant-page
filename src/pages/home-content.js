@@ -1,10 +1,6 @@
 import homeText from './home-content.txt';
 import './home-content.css';
 
-function logText(){
-    console.log(homeText);
-}
-
 function createHomeDiv(){
     const homeDiv = document.createElement('div');
     const blurb = document.createElement('p');
@@ -16,4 +12,4 @@ function createHomeDiv(){
 
     return homeDiv;
 }
-export { logText, createHomeDiv };
+export { createHomeDiv };
