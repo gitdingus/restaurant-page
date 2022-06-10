@@ -1,4 +1,5 @@
 import menuData from './menu-content.json';
+import './menu-content.css';
 
 function createMenuDiv(){
     const menuDiv = document.createElement('div');
@@ -7,7 +8,6 @@ function createMenuDiv(){
     menuDiv.classList.add('menu');
 
     for ( let i = 0; i < menu.length; i++){
-        console.log( menu[i]["category-name"]);
         const newCategoryDiv = createCategoryDiv(menu[i]['category-name']);
         const menuItemsDiv = newCategoryDiv.querySelector('.menu-items');
         const menuItems = menu[i].options;
@@ -26,7 +26,6 @@ function createMenuDiv(){
 function createCategoryDiv(menuCategory){
     const categoryDiv = document.createElement('div');
     const categoryHeader = document.createElement('h1');
-    const hr = document.createElement('hr');
     const menuItemsDiv = document.createElement('div');
 
     categoryDiv.classList.add('category');
@@ -37,7 +36,6 @@ function createCategoryDiv(menuCategory){
     menuItemsDiv.classList.add("menu-items");
 
     categoryDiv.appendChild(categoryHeader);
-    categoryDiv.appendChild(hr);
     categoryDiv.appendChild(menuItemsDiv);
 
     return categoryDiv;
