@@ -1,0 +1,116 @@
+{
+    "menu" : [
+        {
+            "category-name": "Appetizers",
+            "options" : [
+                {
+                    "name": "Fried Mozzarella",
+                    "description": "Fried mozzarella sticks with tomato sauce",
+                    "price": 5.99
+                },
+                {
+                    "name": "Onion rings",
+                    "description": "Fried crispy onion rings",
+                    "price": 5.99
+                },
+                {
+                    "name": "French fries",
+                    "description": "Home fries served with a side of ketchup",
+                    "price": 3.99
+                },
+                {
+                    "name": "Shrimp cocktail",
+                    "description": "Chilled shrimp served with cocktail sauce",
+                    "price": 6.99
+                }
+            ]
+        },
+        {
+            "category-name": "Soups",
+            "options": [
+                {
+                    "name": "Chicken Noodle",
+                    "description": "Celery, carrots, chives, and noodles served in homemade broth",
+                    "price": 6.99
+                },
+                {
+                    "name": "New England Clam Chowder",
+                    "description": "Clams, potatoes, and god knows what else in a creamy broth",
+                    "price": 8.99
+                }
+            ]
+        },
+        {
+            "category-name": "Burgers",
+            "options" : [
+                {
+                    "name": "Cheese Burger",
+                    "description": "Lettuce, tomato, and cheddar cheese on a sesame seed bun",
+                    "price": 10.99
+                },
+                {
+                    "name": "Bacon Burger",
+                    "description": "Bacon, lettuce, and tomato on a sesame seed bun",
+                    "price": 11.99
+                },
+                {
+                    "name": "Theodore Bee's Burger",
+                    "description": "Sauteed onions, mushrooms, and swiss cheese on a sesame seed bun",
+                    "price": 13.99
+                }
+            ]
+        },
+        {
+            "category-name": "Desserts",
+            "options": [
+                {
+                    "name": "German Chocolate Cake",
+                    "description": "The best damn chocolate cake you've ever had",
+                    "price": 7.99
+                },
+                {
+                    "name": "Chocolate Chip Cookie",
+                    "description": "Giant cookie overloaded with chunks of the finest chocolate",
+                    "price": 5.99
+                },
+                {
+                    "name": "Ice Cream",
+                    "description": "Choice of chocolate, vanilla, rocky road, or strawberry",
+                    "price": 4.99
+                }
+            ]
+        },
+        {
+            "category-name": "Drinks",
+            "options": [
+                {
+                    "name": "Coke",
+                    "description": "",
+                    "price": 0.99
+                },
+                {
+                    "name": "Sprite",
+                    "description": "",
+                    "price": 0.99
+                },
+                {
+                    "name": "Dr. Pepper",
+                    "description": "",
+                    "price": 0.99
+                },
+                {
+                    "name": "Coffee",
+                    "description": "",
+                    "price": 0.99
+                },
+                {
+                    "name": "Iced Tea",
+                    "description": "",
+                    "price": 0.99
+                }
+            ]
+        }
+
+    ]
+
+}
