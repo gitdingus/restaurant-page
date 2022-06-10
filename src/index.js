@@ -18,7 +18,25 @@ function createNavBar(){
     const div = document.createElement('div');
     const header = document.createElement('h1');
     const list = document.createElement('ul');
-    const links = ['Home', 'Menu', 'Reservation', 'Contact'];
+    // const links = ['Home', 'Menu', 'Reservation', 'Contact'];
+    const links = [ 
+        {
+            title: "Home",
+            action: loadHomePage
+        },
+        {
+            title: "Menu",
+            action: loadMenuPage
+        },
+        {
+            title: "Reservation",
+            action: loadReservationPage
+        },
+        {
+            title: "Contact",
+            action: loadContactPage
+        }
+    ];
 
     header.textContent = "Theodore Bee's";
 
@@ -32,14 +50,34 @@ function createNavBar(){
     return nav;
 }
 
-function createLinkListItem(name){
+function loadHomePage(e) {
+    console.log("Home");
+    setActivePage(e);
+}
+
+function loadMenuPage(e){
+    console.log("Menu");
+    setActivePage(e);
+}
+
+function loadReservationPage(e){
+    console.log("Reservation");
+    setActivePage(e);
+}
+
+function loadContactPage(e){
+    console.log("Contact");
+    setActivePage(e);
+}
+
+function createLinkListItem(linkObj){
     const item = document.createElement('li');
     const link = document.createElement('a');
 
-    link.textContent = name;
-    link.id = name.toLowerCase();
+    link.textContent = linkObj.title;
+    link.id = linkObj.title.toLowerCase();
 
-    link.addEventListener('click', setActivePage);
+    link.addEventListener('click', linkObj.action);
     item.appendChild(link);
 
     return item;
