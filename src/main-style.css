@@ -46,6 +46,13 @@ nav ul {
     font-size: 25px;
 }
 
+nav ul li:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+
+    cursor: pointer;
+}
 nav > div > ul {
     /* Styling from parent */
     flex: 1;
@@ -63,3 +70,5 @@ nav > div > ul {
 
 
 }
+
+
