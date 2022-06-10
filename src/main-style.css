@@ -1,12 +1,19 @@
 @font-face{
     font-family: 'Cormorant Upright';
-    src: url(./fonts/CormorantUpright-Light.ttf) format("truetype");
+    src: url("./fonts/CormorantUpright-Light.ttf") format("truetype");
 }
 @font-face{
     font-family: "Oswald";
-    src: url(./fonts/static/Oswald-Light.ttf) format("truetype");
+    src: url("./fonts/static/Oswald-Light.ttf") format("truetype");
 }
-
+@font-face{
+    font-family: "Cormorant Garamond - Light";
+    src: url("./fonts/CormorantGaramond-Light.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Cormorant Garamond - Medium";
+    src: url("./fonts/CormorantGaramond-Medium.ttf") format("truetype");
+}
 body{
     margin: 0;
     padding: 0;
@@ -103,4 +110,12 @@ footer .hours{
     text-align: center;
 }
 
+footer div p {
+    font-family: "Cormorant Garamond - Light";
+    font-size: 20px;
+}
+footer div p:first-child{
+    font-family: "Cormorant Garamond - Medium";
+    text-align: center;
+}
 
