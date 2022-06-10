@@ -12,6 +12,8 @@
     color: rgba(255, 255, 255, 1);
     white-space: pre-wrap;
     text-align: center;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,.9);
+
 
     font-family: "Cormorant Garamond - SemiBold";
     font-size: 1.5rem;
