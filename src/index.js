@@ -38,6 +38,7 @@ function createLinkListItem(name){
 
 function createContentDummy(){
     const div = document.createElement('div');
+    div.classList.add("page-content");
 
     return div;
 }

@@ -10,9 +10,23 @@
 body{
     margin: 0;
     padding: 0;
+
+    height: 100vh;
 }
 
-nav > div {
+#content{
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+}
+
+.page-content{
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+nav > div,
+footer {
     /* Layout Styling */
     display: flex;
     align-items: center;
@@ -69,6 +83,16 @@ nav > div > ul {
     list-style: none;
 
 
+}
+
+footer {
+    /* Display already set to flex */
+    justify-content: space-between;
+}
+
+footer p{
+    margin: 0;
+    padding: 0;
 }
 
 
