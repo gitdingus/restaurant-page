@@ -1,6 +1,7 @@
 const content = document.querySelector('#content');
 
 content.appendChild(createNavBar());
+content.appendChild(createContentDummy());
 content.appendChild(createFooter());
  
 function createNavBar(){
@@ -31,6 +32,12 @@ function createLinkListItem(name){
     item.appendChild(link);
 
     return item;
+}
+
+function createContentDummy(){
+    const div = document.createElement('div');
+
+    return div;
 }
 
 function createFooter(){
