@@ -1,3 +1,65 @@
+@font-face{
+    font-family: 'Cormorant Upright';
+    src: url(./fonts/CormorantUpright-Light.ttf) format("truetype");
+}
+@font-face{
+    font-family: "Oswald";
+    src: url(./fonts/static/Oswald-Light.ttf) format("truetype");
+}
+
 body{
-    background-color: blue;
+    margin: 0;
+    padding: 0;
+}
+
+nav > div {
+    /* Layout Styling */
+    display: flex;
+    align-items: center;
+
+    padding: 15px 45px;
+
+    /* Box Styling */
+    background-color: black;
+
+    /* General Text Styling */
+    color: rgba(255, 255, 255, .9);
+}
+
+nav  h1 {
+    /* Positioning */
+    /* Take out of document flow so links can be centered */
+    position: absolute;
+
+    /* Font Styling */
+    font-family: "Cormorant Upright";
+    font-size: 45px;
+
+    /* Box Styling */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    /* Font Styling */
+    font-family: "Oswald";
+    font-size: 25px;
+}
+
+nav > div > ul {
+    /* Styling from parent */
+    flex: 1;
+
+    /* Children Layout Styling */
+    display: flex;
+    justify-content: center;
+    gap: 25px; 
+
+    margin: 0;
+    padding: 0;
+
+    /* List styling */
+    list-style: none;
+
+
 }
