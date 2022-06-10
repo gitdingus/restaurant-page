@@ -36,11 +36,14 @@ body{
     background-image: url('burger-2.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: rgb(43, 38, 38);
     flex-grow: 1;
     flex-shrink: 0;
 
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav > div,
 footer {
