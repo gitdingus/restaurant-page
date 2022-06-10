@@ -1,11 +1,19 @@
 import './main-style.css';
+import  { logText, createHomeDiv } from './pages/home-content';
 
 const content = document.querySelector('#content');
+const navBar = createNavBar();
+const pageContent = createPageContentDiv();
+const footer = createFooter();
 
-content.appendChild(createNavBar());
-content.appendChild(createContentDummy());
-content.appendChild(createFooter());
+content.appendChild(navBar);
+content.appendChild(pageContent);
+content.appendChild(footer);
  
+pageContent.appendChild(createHomeDiv());
+
+logText();
+
 function createNavBar(){
     const nav = document.createElement('nav');
     const div = document.createElement('div');
@@ -36,7 +44,7 @@ function createLinkListItem(name){
     return item;
 }
 
-function createContentDummy(){
+function createPageContentDiv(){
     const div = document.createElement('div');
     div.classList.add("page-content");
 

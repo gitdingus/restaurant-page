@@ -14,6 +14,10 @@
     font-family: "Cormorant Garamond - Medium";
     src: url("./fonts/CormorantGaramond-Medium.ttf") format("truetype");
 }
+@font-face{
+    font-family: "Cormorant Garamond - SemiBold";
+    src: url("./fonts/CormorantGaramond-SemiBold.ttf") format("truetype");
+}
 body{
     margin: 0;
     padding: 0;
@@ -35,6 +39,8 @@ body{
     background-color: rgb(43, 38, 38);
     flex-grow: 1;
     flex-shrink: 0;
+
+    display: flex;
 }
 nav > div,
 footer {
@@ -75,6 +81,7 @@ nav ul li:hover{
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
+
 
     cursor: pointer;
 }

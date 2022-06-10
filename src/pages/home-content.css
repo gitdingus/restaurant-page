@@ -1,0 +1,22 @@
+.home{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+}
+
+.home p{
+    background-color: rgba(0,0,0,.4);
+    color: rgba(255, 255, 255, 1);
+    white-space: pre-wrap;
+    text-align: center;
+
+    font-family: "Cormorant Garamond - SemiBold";
+    font-size: 1.5rem;
+
+    width: 50%;
+    padding: 50px;
+    border-radius: 30px;
+}

@@ -22,6 +22,10 @@ module.exports = {
                 test: /\.(webp|jpg)$/i,
                 type: 'asset/resource'
             },
+            {
+                test: /\.txt$/i,
+                type: 'asset/source'
+            }
         ],
     },
     plugins: [ new HtmlWebpackPlugin({
