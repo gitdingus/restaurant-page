@@ -1,5 +1,6 @@
 import './main-style.css';
-import  { logText, createHomeDiv } from './pages/home-content';
+import  { createHomeDiv } from './pages/home-content';
+import { createMenuDiv } from './pages/menu-content';
 
 const content = document.querySelector('#content');
 const navBar = createNavBar();
