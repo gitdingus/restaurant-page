@@ -7,7 +7,7 @@
     font-size: 1.5rem;
 
     padding: 50px;
-    padding-top: 30px;
+    padding-top: 40px;
     border-radius: 30px;
 
     margin: 75px;
@@ -20,14 +20,24 @@
     padding: 0;
 }
 
+.category {
+    background-color: rgba(187, 212, 216, .97);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 .category h1{
+    color: rgba(0,0,0,1);
     margin-top: 10px;
     margin-bottom: 4px;
+    padding-left: 15px;
+
+
 }
 
 .menu-items{
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, .95);
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid rgb(126, 166, 172);
+    background-color: rgba(255, 255, 255, .8);
     color: rgba(0,0,0,1);
 
     padding: 25px;
