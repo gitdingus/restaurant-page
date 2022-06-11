@@ -11,7 +11,7 @@ content.appendChild(navBar);
 content.appendChild(pageContent);
 content.appendChild(footer);
  
-pageContent.appendChild(createHomeDiv());
+pageContent.appendChild(createMenuDiv());
 
 function createNavBar(){
     const nav = document.createElement('nav');
@@ -53,21 +53,27 @@ function createNavBar(){
 function loadHomePage(e) {
     console.log("Home");
     setActivePage(e);
+    clearPageContent();
+    pageContent.appendChild(createHomeDiv());
 }
 
 function loadMenuPage(e){
     console.log("Menu");
     setActivePage(e);
+    clearPageContent();
+    pageContent.appendChild(createMenuDiv());
 }
 
 function loadReservationPage(e){
     console.log("Reservation");
     setActivePage(e);
+    clearPageContent();
 }
 
 function loadContactPage(e){
     console.log("Contact");
     setActivePage(e);
+    clearPageContent();
 }
 
 function createLinkListItem(linkObj){
@@ -150,4 +156,10 @@ function createFooter(){
     footer.appendChild(phoneNumberDiv);
 
     return footer;
+}
+
+function clearPageContent(){
+    while (pageContent.firstChild){
+        pageContent.removeChild(pageContent.firstChild);
+    }
 }
