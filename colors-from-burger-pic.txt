@@ -1,0 +1,19 @@
+Lettuce light green: a0d698
+
+lettuce dark green 425818
+
+
+
+light tomato fa601a
+
+dark tomato e72a16
+
+cheese fcd518
+
+dark bun fa6e17
+
+light bun fbe4a7
+
+seseme seed fff8ee
+
+onion b21725
