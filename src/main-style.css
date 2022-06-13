@@ -138,3 +138,17 @@ footer div p:first-child{
     text-align: center;
 }
 
+@media (max-width: 1000px){
+    .page-content{
+        background-image: url('burger-3.webp');
+        background-size: cover;
+    }
+    nav > div{
+        flex-direction: column;
+    }
+
+    nav h1{
+        position: static;
+    }
+
+}
