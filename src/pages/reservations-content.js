@@ -48,7 +48,7 @@ function createReservationDiv(){
         attributes: { 
             id: "phone-field",
             name: "phone-field",
-            type: "phone",
+            type: "tel",
         },
     });
 
@@ -119,11 +119,10 @@ function createReservationDiv(){
         ]
     );
 
-    appendChildren(reservationFormDiv, [ reservationForm ]);
+    appendChildren(reservationFormDiv, [ reservationHeader,reservationForm ]);
 
     appendChildren(reservationDiv,
         [
-            reservationHeader,
             reservationFormDiv,
         ]
     );
