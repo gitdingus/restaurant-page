@@ -32,13 +32,16 @@
 
 .reservation-header{
     margin: 20px;
+    font-family: "Oswald";
+    font-weight: normal;
+    font-size: 30px;
 }
 
 form label{
     justify-self: right;
     text-align: right;
     width: 150px;;
-    font-family: "Cormornt Garamond - Medium";
+    font-family: "Cormorant Garamond - Medium";
 }
 
 form input{
