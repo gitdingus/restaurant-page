@@ -111,6 +111,9 @@ nav > div > ul {
 footer {
     /* Display already set to flex */
     justify-content: space-between;
+    position: sticky;
+    bottom: -110px;
+    height: 110px;
 }
 
 footer p{
