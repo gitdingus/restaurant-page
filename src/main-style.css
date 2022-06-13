@@ -116,6 +116,10 @@ footer {
     height: 110px;
 }
 
+footer:hover{
+    bottom: 0;
+}
+
 footer p{
     margin: 0;
     padding: 0;
