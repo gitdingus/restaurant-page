@@ -21,20 +21,25 @@
 }
 
 .category {
-    background-color: rgba(160, 214, 152, .95); /*light lettuce green*/
-    /* background-color: #fbe4a7;  light bun */
-    /* background-color: rgba(187, 212, 216, .97); */
+    /* background-color: rgba(160, 214, 152, .95); light lettuce green */
+
+    background-color: rgba(0,0,0,.95);
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 .category h1{
-    color: rgba(0,0,0,1);
+    /* color: rgba(0,0,0,1); */
+    font-family: "Oswald";
+    font-size: 30px;
+    font-weight: normal;
+    color: white; 
+
     margin-top: 10px;
     margin-bottom: 4px;
     padding-left: 15px;
 
 
-    text-shadow: 3px 2px 5px black;
+    /* text-shadow: 3px 2px 5px black; */
 
 
 }
@@ -42,7 +47,7 @@
 .menu-items{
     border-bottom-right-radius: 10px;
     border-top: 2px solid rgb(126, 166, 172);
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .95);
     color: rgba(0,0,0,1);
 
     padding: 25px;
