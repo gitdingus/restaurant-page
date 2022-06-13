@@ -138,11 +138,7 @@ footer div p:first-child{
     text-align: center;
 }
 
-@media (max-width: 1000px){
-    .page-content{
-        background-image: url('burger-3.webp');
-        background-size: cover;
-    }
+@media (max-width: 1000px), (orientation: portrait){
     nav > div{
         flex-direction: column;
     }
@@ -151,4 +147,11 @@ footer div p:first-child{
         position: static;
     }
 
+}
+
+@media (orientation: portrait){
+    .page-content{
+        background-image: url('burger-3.webp');
+        background-size: cover;
+    }
 }
