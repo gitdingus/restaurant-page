@@ -32,11 +32,11 @@ function createHtmlElement(elementObject){
     }
 
 
-    for (property in properties){
+    for (let property in properties){
         newElement[property] = properties[property];
     }
 
-    for (attribute in attributes){
+    for (let attribute in attributes){
         newElement.setAttribute(attribute, attributes[attribute]);
     }
 
@@ -53,4 +53,4 @@ function appendChildren(parent, children){
 };
 
 
-exports { createHtmlElement, appendChildren };
+export {createHtmlElement, appendChildren };
