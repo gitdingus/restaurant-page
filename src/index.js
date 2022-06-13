@@ -1,6 +1,7 @@
 import './main-style.css';
 import  { createHomeDiv } from './pages/home-content';
 import { createMenuDiv } from './pages/menu-content';
+import { createReservationDiv } from "./pages/reservations-content";
 
 const content = document.querySelector('#content');
 const navBar = createNavBar();
@@ -11,7 +12,7 @@ content.appendChild(navBar);
 content.appendChild(pageContent);
 content.appendChild(footer);
  
-pageContent.appendChild(createMenuDiv());
+pageContent.appendChild(createReservationDiv());
 
 function createNavBar(){
     const nav = document.createElement('nav');
@@ -68,6 +69,7 @@ function loadReservationPage(e){
     console.log("Reservation");
     setActivePage(e);
     clearPageContent();
+    pageContent.appendChild(createReservationDiv());
 }
 
 function loadContactPage(e){
