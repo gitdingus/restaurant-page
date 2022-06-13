@@ -94,6 +94,9 @@ function createReservationDiv(){
             id: "time-field",
             name: "time-field",
             type: "time",
+            min: "09:00",
+            max: "20:30",
+            step: `${60*15}`
         },
     });
 
