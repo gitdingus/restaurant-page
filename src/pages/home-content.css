@@ -22,3 +22,12 @@
     padding: 50px;
     border-radius: 30px;
 }
+
+@media (orientation: portrait){
+    .home p{
+        box-sizing: border-box;
+        width: 80vw;
+
+        font-size: 2rem;
+    }
+}

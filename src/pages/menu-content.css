@@ -88,3 +88,12 @@
 .menu-item p{
     font-size: 1.25rem;
 }
+
+@media (orientation: portrait){
+   .menu{
+    box-sizing: border-box;
+    width: 90vw;
+    margin: 15px;
+   }
+
+}
