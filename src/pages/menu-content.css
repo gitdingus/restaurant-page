@@ -96,4 +96,16 @@
     margin: 15px;
    }
 
+   .category h1{
+    font-size: 3rem;
+   }
+
+   .menu-item h2{
+    font-size: 2.5rem;
+   }
+
+   .menu-item p{
+    font-size: 2rem;
+   }
+
 }

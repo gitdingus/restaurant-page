@@ -93,8 +93,33 @@ form button{
      margin: 15px;
     }
     
+    .reservation-header{
+        font-size: 2.5rem;
+    }
+    .reservation form {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+
+    }
     form input{
         width: 50vw;
+        font-size: 2.25rem;
+        padding: 15px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    form label{
+        font-size: 2.25rem;
+        margin-bottom: 0;
+    }
+
+    form button{
+        font-size: 2.25rem;
+        width: auto;
+        padding: 20px 40px;
+        align-self:flex-end;
     }
  
  }
