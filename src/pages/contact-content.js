@@ -1,7 +1,11 @@
 import { createHtmlElement, appendChildren } from "../utils/dom-utils";
+import './contact-content.css';
 
 function createContactDiv(){
-    const contactDiv = document.createElement("div");
+    const contactDiv = createHtmlElement({
+        tag: "div",
+        classes: ["contact-div"],
+    })
 
     appendChildren(contactDiv, [
         createHtmlElement({
@@ -13,7 +17,7 @@ function createContactDiv(){
         createHtmlElement({
             tag: "h2",
             properties: {
-                textContent: "Address",
+                textContent: "Address:",
             },
         }),
         createHtmlElement({
@@ -31,7 +35,7 @@ function createContactDiv(){
         createHtmlElement({
             tag: "h2",
             properties: {
-                textContent: "Phone",
+                textContent: "Phone:",
             },
         }),
         createHtmlElement({

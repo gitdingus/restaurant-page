@@ -13,7 +13,7 @@ content.appendChild(navBar);
 content.appendChild(pageContent);
 content.appendChild(footer);
  
-pageContent.appendChild(createReservationDiv());
+pageContent.appendChild(createContactDiv());
 
 function createNavBar(){
     const nav = document.createElement('nav');
