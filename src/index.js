@@ -2,6 +2,7 @@ import './main-style.css';
 import  { createHomeDiv } from './pages/home-content';
 import { createMenuDiv } from './pages/menu-content';
 import { createReservationDiv } from "./pages/reservations-content";
+import { createContactDiv } from "./pages/contact-content";
 
 const content = document.querySelector('#content');
 const navBar = createNavBar();
@@ -76,6 +77,7 @@ function loadContactPage(e){
     console.log("Contact");
     setActivePage(e);
     clearPageContent();
+    pageContent.appendChild(createContactDiv());
 }
 
 function createLinkListItem(linkObj){
